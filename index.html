@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <style>
+        .grid-item {
+            width: 200px;
+            background-color: pink;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .grid-item--width2 {
+            width: 200px;
+            background-color: yellow;
+            height: 50px;
+        }
+        #outertop {
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid black;
+            /* border-radius: 4px; */
+            background-color: transparent;
+            /* width: 800px; */
+            height: 30%;
+
+            
+
+    border:outset 5px #ebbceb;
+    -moz-border-radius-topleft: 17px;
+    -moz-border-radius-topright:17px;
+    -moz-border-radius-bottomleft:17px;
+    -moz-border-radius-bottomright:17px;
+    -webkit-border-top-left-radius:17px;
+    -webkit-border-top-right-radius:17px;
+    -webkit-border-bottom-left-radius:17px;
+    -webkit-border-bottom-right-radius:17px;
+    border-top-left-radius:17px;
+    border-top-right-radius:17px;
+    border-bottom-left-radius:17px;
+    border-bottom-right-radius:17px;
+
+
+        }
+        .form-group{
+            border: 0px solid transparent;
+        }
+        .form-control{
+            width: 400px;
+        }
+        .outertop{
+            padding: 20px !important;
+        }
+        #outertop{
+            position:relative;
+            left: 25%;
+            top: 10%;
+        }
+        .copynote{
+            position:relative;
+            /* border: 1px solid black; */
+            width: fit-content;
+            
+
+    border:none 0px #ebbceb;
+    -moz-border-radius-topleft: 17px;
+    -moz-border-radius-topright:17px;
+    -moz-border-radius-bottomleft:17px;
+    -moz-border-radius-bottomright:17px;
+    -webkit-border-top-left-radius:17px;
+    -webkit-border-top-right-radius:17px;
+    -webkit-border-bottom-left-radius:17px;
+    -webkit-border-bottom-right-radius:17px;
+    border-top-left-radius:17px;
+    border-top-right-radius:17px;
+    border-bottom-left-radius:17px;
+    border-bottom-right-radius:17px;
+
+
+        }
+        #span3{
+            position: relative;
+            left:350px;
+        }
+        .grid-div{
+            background-color: aqua;
+            border: 10px solid aqua;
+        }
+        .fa-minus-circle{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        .fa-palette{
+            position: relative;
+
+        }
+        .grid-item{
+            height: fit-content;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="outertop">
+        <div class="copynote">
+            <div class="form-group">
+                <input type="text" class="form-control" id="text1" placeholder="Enter ...">
+            </div>
+            <div class="form-group resizetextarea">
+                <textarea class="form-control" rows="8" id="notearea" placeholder="Enter ..."></textarea>
+            </div>
+        </div>
+        <span><i class="fas fa-palette">
+                <div id="colorselect"></div>
+            </i></span>
+        <span id="span3"><i class="fas fa-times-circle"></i></span>
+    </div>
+    <div id="outerbottom" style="height: fit-content">
+        <div class="grid grid-div" style="height: fit-content">
+            <!-- <div class="grid-item"></div>
+            <div class="grid-item grid-item--width2"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div> -->
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/packery.pkgd.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+        $(window).on('load', function () {
+            $('.resizetextarea').hide();
+            $('#outerbottom').hide();
+        });
+
+        $('#text1').keypress(function () {
+            $('.resizetextarea').show();
+
+        });
+
+
+        var $grid = $('.grid').packery({
+            itemSelector: '.grid-item',
+            gutter: 10
+        });
+        var $items = $grid.find('.grid-item').draggable();
+        $grid.packery('bindUIDraggableEvents', $items);
+        $('#text1').keyup(function () {
+        });
+        $('.far fa-trash-alt').click(function () {
+        });
+        $('.fa-times-circle').click(function () {
+
+            var title = $('#text1').val();
+            var note = $('#notearea').val();
+
+
+            if (title == "") {
+                return;
+            }
+            if (note == "") {
+                return;
+            }
+            $('#text1').val("");
+            $('#notearea').val("");
+            $('.resizetextarea').hide();
+            $('#outerbottom').show();
+
+            // <div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title"> title</h5><p class="card-text">content.</p></div></div>
+
+
+
+            var $items = $('<div class="grid-item" >' + title + '<br>' + note + '<span class="delcard"><i class="fas delcard  fa-minus-circle"></i></span></div>');
+            // var $items = $('<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title"> title</h5><p class="card-text">content.</p></div></div>')
+            
+            
+            $('.grid').append($items)
+                .packery('appended', $items);
+
+            var $items = $grid.find('.grid-item').draggable();
+            $grid.packery('bindUIDraggableEvents', $items);
+            $('.delcard').click(function (event) {
+                var element = $(event.currentTarget).parent();
+                $grid.packery('remove', element)
+                    .packery('shiftLayout');
+            });
+            $('.grid').resizable();
+            $('.grid-item').resizable();
+        });
+    </script>
+</body>
+
+</html>
