@@ -2,6 +2,11 @@
   "name": "demo7",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files ." 
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.2.1",
     "browser-sync": "^2.26.3",
@@ -9,10 +14,5 @@
     "packery": "^2.1.2"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "danuka <danukaem@gmail.com>",
-  "license": "ISC",
   "description": ""
 }

@@ -9,46 +9,36 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
     <style>
         .grid-item {
             width: 200px;
-            background-color: pink;
             height: 50px;
             border: 2px solid black;
         }
         .grid-item--width2 {
             width: 200px;
-            background-color: yellow;
             height: 50px;
         }
         #outertop {
             display: inline-block;
             padding: 20px;
             border: 1px solid black;
-            /* border-radius: 4px; */
             background-color: transparent;
-            /* width: 800px; */
+
             height: 30%;
-
-            
-
-    border:outset 5px #ebbceb;
-    -moz-border-radius-topleft: 17px;
-    -moz-border-radius-topright:17px;
-    -moz-border-radius-bottomleft:17px;
-    -moz-border-radius-bottomright:17px;
-    -webkit-border-top-left-radius:17px;
-    -webkit-border-top-right-radius:17px;
-    -webkit-border-bottom-left-radius:17px;
-    -webkit-border-bottom-right-radius:17px;
-    border-top-left-radius:17px;
-    border-top-right-radius:17px;
-    border-bottom-left-radius:17px;
-    border-bottom-right-radius:17px;
-
-
+            border:outset 5px #ebbceb;
+            -moz-border-radius-topleft: 17px;
+            -moz-border-radius-topright:17px;
+            -moz-border-radius-bottomleft:17px;
+            -moz-border-radius-bottomright:17px;
+            -webkit-border-top-left-radius:17px;
+            -webkit-border-top-right-radius:17px;
+            -webkit-border-bottom-left-radius:17px;
+            -webkit-border-bottom-right-radius:17px;
+            border-top-left-radius:17px;
+            border-top-right-radius:17px;
+            border-bottom-left-radius:17px;
+            border-bottom-right-radius:17px;
         }
         .form-group{
             border: 0px solid transparent;
@@ -56,7 +46,7 @@
         .form-control{
             width: 400px;
         }
-        .outertop{
+        #outertop{
             padding: 20px !important;
         }
         #outertop{
@@ -66,23 +56,20 @@
         }
         .copynote{
             position:relative;
-            /* border: 1px solid black; */
             width: fit-content;
-            
-
-    border:none 0px #ebbceb;
-    -moz-border-radius-topleft: 17px;
-    -moz-border-radius-topright:17px;
-    -moz-border-radius-bottomleft:17px;
-    -moz-border-radius-bottomright:17px;
-    -webkit-border-top-left-radius:17px;
-    -webkit-border-top-right-radius:17px;
-    -webkit-border-bottom-left-radius:17px;
-    -webkit-border-bottom-right-radius:17px;
-    border-top-left-radius:17px;
-    border-top-right-radius:17px;
-    border-bottom-left-radius:17px;
-    border-bottom-right-radius:17px;
+            border:none 0px #ebbceb;
+            -moz-border-radius-topleft: 17px;
+            -moz-border-radius-topright:17px;
+            -moz-border-radius-bottomleft:17px;
+            -moz-border-radius-bottomright:17px;
+            -webkit-border-top-left-radius:17px;
+            -webkit-border-top-right-radius:17px;
+            -webkit-border-bottom-left-radius:17px;
+            -webkit-border-bottom-right-radius:17px;
+            border-top-left-radius:17px;
+            border-top-right-radius:17px;
+            border-bottom-left-radius:17px;
+            border-bottom-right-radius:17px;
 
 
         }
@@ -104,8 +91,92 @@
 
         }
         .grid-item{
-            height: fit-content;
+            height: fit-content !important;
         }
+        #colorselect{
+            position: absolute;
+            height: 100px;
+            width : 100px;
+            bottom: 0px;
+        }
+        .colorspan{
+            display: inline-block;
+            border-radius: 10px;
+            height: 20px;
+            width : 20px;
+        }
+        .c1{
+            background-color: white;
+            border: 1px solid black;
+        }
+        .c2{
+            background-color: orange;
+            border: 1px solid black;
+        }
+
+        .c3{
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        .c4{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        .c5{
+            background-color: green;
+            border: 1px solid black;
+        }
+
+        .c6{
+            background-color: blue;
+            border: 1px solid black;
+        }
+
+        .c7{
+            background-color: blueviolet;
+            border: 1px solid black;
+        }
+
+        .c8{
+            background-color: purple;
+            border: 1px solid black;
+        }
+
+        .c9{
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        .c10{
+            background-color: rgb(136, 78, 78);
+            border: 1px solid black;
+        }
+
+        .c11{
+            background-color: gray;
+            border: 1px solid black;
+        }
+
+        .c12{
+            background-color: rgb(53, 248, 248);
+            border: 1px solid black;
+        }
+       
+
+        .newClass { 
+            text-indent: 40px; 
+            letter-spacing: .4em;
+            width: 410px; height: 120px; 
+            padding: 30px; margin: 10px;
+            font-size: 1.1em; 
+            z-index: 1000;
+        }
+        #notearea{
+
+        }
+
 
     </style>
 </head>
@@ -117,11 +188,25 @@
                 <input type="text" class="form-control" id="text1" placeholder="Enter ...">
             </div>
             <div class="form-group resizetextarea">
-                <textarea class="form-control" rows="8" id="notearea" placeholder="Enter ..."></textarea>
+                    <i class="fas fa-plus"></i>
+                <textarea  class="form-control" rows="8" id="notearea" placeholder="Enter ..."></textarea>
             </div>
         </div>
         <span><i class="fas fa-palette">
-                <div id="colorselect"></div>
+                <div id="colorselect">
+                    <div class="colorspan c1"></div>
+                    <div class="colorspan c2"></div>
+                    <div class="colorspan c3"></div>
+                    <div class="colorspan c4"></div><br>
+                    <div class="colorspan c5"></div>
+                    <div class="colorspan c6"></div>
+                    <div class="colorspan c7"></div>
+                    <div class="colorspan c8"></div><br>
+                    <div class="colorspan c9"></div>
+                    <div class="colorspan c10"></div>
+                    <div class="colorspan c11"></div>
+                    <div class="colorspan c12"></div>
+                </div>
             </i></span>
         <span id="span3"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -139,27 +224,99 @@
     <script src="js/packery.pkgd.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
     <!-- <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script> -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
 
+        var selectedcolor;
         $(window).on('load', function () {
             $('.resizetextarea').hide();
             $('#outerbottom').hide();
+            $('#colorselect').hide();
+
         });
 
         $('#text1').keypress(function () {
             $('.resizetextarea').show();
 
         });
+        var rows=1;
+        $('.fa-plus').click(function(){
+            $('#notearea').attr('row', rows++)
+        });
+        
 
+        $('.c1').click(function () {
+            selectedcolor = 'white';
+            $('#outertop').css('background-color', 'white');
+            $('.form-control').css('background-color', 'white');
+        });
+        $('.c2').click(function () {
+            selectedcolor = 'orange';
 
+            $('#outertop').css('background-color', 'orange');
+            $('.form-control').css('background-color', 'orange');
+        });
+        $('.c3').click(function () {
+            selectedcolor = 'red';
+
+            $('#outertop').css('background-color', 'red');
+            $('.form-control').css('background-color', 'red');
+        });
+        $('.c4').click(function () {
+            selectedcolor = 'yellow';
+
+            $('#outertop').css('background-color', 'yellow');
+            $('.form-control').css('background-color', 'yellow');
+        });
+        $('.c5').click(function () {
+            selectedcolor = 'green';
+
+            $('#outertop').css('background-color', 'green');
+            $('.form-control').css('background-color', 'green');
+        });
+        $('.c6').click(function () {
+            selectedcolor = 'blue';
+
+            $('#outertop').css('background-color', 'blue');
+            $('.form-control').css('background-color', 'blue');
+        });
+        $('.c7').click(function () {
+            selectedcolor = 'blueviolet';
+
+            $('#outertop').css('background-color', 'blueviolet');
+            $('.form-control').css('background-color', 'blueviolet');
+        });
+        $('.c8').click(function () {
+            selectedcolor = 'purple';
+
+            $('#outertop').css('background-color', 'purple');
+            $('.form-control').css('background-color', 'purple');
+        });
+        $('.c9').click(function () {
+            selectedcolor = 'pink';
+
+            $('#outertop').css('background-color', 'pink');
+            $('.form-control').css('background-color', 'pink');
+        });
+        $('.c10').click(function () {
+            selectedcolor = 'rgb(136, 78, 78)';
+
+            $('#outertop').css('background-color', 'rgb(136, 78, 78)');
+            $('.form-control').css('background-color', 'rgb(136, 78, 78)');
+        });
+        $('.c11').click(function () {
+            selectedcolor = 'gray';
+
+            $('#outertop').css('background-color', 'gray');
+            $('.form-control').css('background-color', 'gray');
+        });
+        $('.c12').click(function () {
+            selectedcolor = 'rgb(53, 248, 248)';
+
+            $('#outertop').css('background-color', 'rgb(53, 248, 248)');
+            $('.form-control').css('background-color', 'rgb(53, 248, 248)');
+        });
         var $grid = $('.grid').packery({
             itemSelector: '.grid-item',
             gutter: 10
@@ -168,13 +325,11 @@
         $grid.packery('bindUIDraggableEvents', $items);
         $('#text1').keyup(function () {
         });
-        $('.far fa-trash-alt').click(function () {
-        });
+       
         $('.fa-times-circle').click(function () {
 
             var title = $('#text1').val();
             var note = $('#notearea').val();
-
 
             if (title == "") {
                 return;
@@ -183,18 +338,12 @@
                 return;
             }
             $('#text1').val("");
+
             $('#notearea').val("");
             $('.resizetextarea').hide();
             $('#outerbottom').show();
 
-            // <div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title"> title</h5><p class="card-text">content.</p></div></div>
-
-
-
-            var $items = $('<div class="grid-item" >' + title + '<br>' + note + '<span class="delcard"><i class="fas delcard  fa-minus-circle"></i></span></div>');
-            // var $items = $('<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title"> title</h5><p class="card-text">content.</p></div></div>')
-            
-            
+            var $items = $('<div class="grid-item "  style="height: fit-content !important; background-color:' + selectedcolor + ' ;">' + title + '<br>' + note + '<span class="delcard"><i class="fas delcard  fa-minus-circle"></i></span></div>');
             $('.grid').append($items)
                 .packery('appended', $items);
 
@@ -207,7 +356,38 @@
             });
             $('.grid').resizable();
             $('.grid-item').resizable();
+
+            selectedcolor = 'transparent';
+            $('#outertop').css('background-color', 'transparent');
+            $('.form-control').css('background-color', 'transparent');
+            var elemant;
+            $('.grid-item').click(function (event) {
+                elemant = $(event.currentTarget);
+                $(elemant).addClass("newClass", 1000, callback);
+                console.log('working');
+            });
+
+            function callback() {
+                setTimeout(function () {
+
+                    $(elemant).removeClass("newClass");
+                }, 1500);
+            }
+
         });
+
+        $('.fa-palette').mouseover(function (event) {
+            $('#colorselect').show();
+
+        });
+        $('.fa-palette').mouseleave(function (event) {
+            $('#colorselect').hide();
+
+        });
+
+
+
+
     </script>
 </body>
 
